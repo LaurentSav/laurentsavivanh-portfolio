@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --matrix-letter: #ffffff;
+    --matrix-background: hsla(var(--b1)/ 0.3);
+}
+
+[data-theme='light'] {
+    --matrix-letter: #000000;
+    --matrix-background: hsla(var(--b1)/ 0.3);
+}
+
+[data-theme='night'] {
+    --matrix-letter: #ffffff;
+    --matrix-background: hsla(var(--b1)/ 0.3);
+}
+
+section{
+    max-width: 1124px;
+    margin: auto;
+    padding: 0 2rem;
+}
