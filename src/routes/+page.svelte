@@ -33,6 +33,7 @@
                 ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--matrix-background');
                 ctx.textAlign = 'center';
                 ctx.fillRect(0, 0, canvas.width, canvas.height)
+                ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--matrix-letter');
                 ctx.font = effect.fontSize + 'px monospace';
                 effect.symbols.forEach(symbole => symbole.draw(ctx))
                 timer = 0;
@@ -43,6 +44,11 @@
 
         }
         animate(0);
+        window.addEventListener('resize', function(){
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            effect.resize(canvas.width, canvas.height);
+        });
     })
     
 </script>
@@ -53,7 +59,7 @@
     </div>
     <section id="intro" class="relative min-h-screen">
         <div class="absolute top-1/2 -translate-y-1/2">
-            <h1 class="font-bold text-3xl sm:text-5xl lg:text-6xl text-base-content dark:text-white">
+            <h1 class="font-bold text-3xl sm:text-5xl lg:text-6xl text-base-content">
                 <span class="block z-10">Hi, I'm Laurent Savivanh!</span> 
                 <span class="block z-10">I like to code.</span> 
                 <span class="my-2 block text-lg font-light text-gray-400 sm:text-xl lg:text-3xl z-10">Software Engineer. Fullstack developer.</span>

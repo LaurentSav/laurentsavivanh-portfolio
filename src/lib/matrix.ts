@@ -15,7 +15,6 @@ export class Symbole{
     }
     draw(context: CanvasRenderingContext2D){
         this.text = this.characters.charAt(Math.floor(Math.random() * this.characters.length))
-        context.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--matrix-letter');
         context.fillText(this.text, this.x * this.fontSize, this.y * this.fontSize);
         if(this.y * this.fontSize > this.canvasHeight && Math.random() > 0.999){
             this.y = 0;
@@ -35,15 +34,22 @@ export class Effect{
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
         this.fontSize = 14;
-        this.columns = this.canvasWidth / this.fontSize;
+        this.columns = Math.floor(this.canvasWidth/this.fontSize)-1;
         this.symbols = [];
         this.#initialize();
         console.log(this.symbols);
     }
     #initialize(){
         for(let i = 0; i < this.columns; i++){
-            this.symbols[i] = new Symbole(i, 0, this.fontSize, this.canvasHeight);
+            this.symbols[i] = new Symbole(i, 100, this.fontSize, this.canvasHeight);
         }
+    }
+    resize(width: number, height: number){
+        this.canvasWidth = width;
+        this.canvasHeight = height;
+        this.columns = Math.floor(this.canvasWidth/this.fontSize)-1;
+        this.symbols = [];
+        this.#initialize();
     }
 }
 
