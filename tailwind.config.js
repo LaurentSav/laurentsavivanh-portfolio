@@ -6,7 +6,16 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-		themes: ["light", "night"],
+		themes: [
+      "light", 
+      {
+        night:{
+          ...require("daisyui/src/theming/themes")["[data-theme=night]"],
+          "base-content": "white"
+        }
+      
+      
+      }],
     darkTheme: "night"
 	}
 }
