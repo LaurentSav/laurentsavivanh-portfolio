@@ -66,7 +66,7 @@
         <div class="absolute top-1/2 -translate-y-1/2">
             <h1 class="font-bold text-3xl sm:text-5xl lg:text-6xl title1">
                 <span class="block z-10">Hi, I'm Laurent Savivanh!</span> 
-                <span class="block z-10">I love coding.</span> 
+                <span class="block z-10">I love <span class="text-secondary">coding</span>.</span> 
                 <span class="my-2 block text-lg font-light text-gray-400 sm:text-xl lg:text-3xl z-10">Software Engineer. Fullstack developer.</span>
             </h1>
             <div class="flex gap-4 pb-6 pt-6 sm:gap-6">
