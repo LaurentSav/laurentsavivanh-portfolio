@@ -206,14 +206,14 @@
             <figure><img class="object-fill h-40 w-64" src={UQAC} alt="UQAC" /></figure>
             <div class="card-body">
               <h2 class="card-title">Master Degree, in Computer Science - University of Quebec at Chicoutimi</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <p>Chicoutimi, Canada, Sep. 2020 - Feb. 2022</p>
             </div>
           </div>
         <div class="pt-4 card w-96 bg-base-100 shadow-xl outline outline-secondary outline-offset-0 transition delay-50 duration-50 ease-in-out hover:scale-105">
             <figure><img class="object-fill h-40 w-64" src={EILCO} alt="EILCO" /></figure>
             <div class="card-body">
                 <h2 class="card-title">Engineer Degree, in Computer Science - Engineering School of the Opal Coast</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Calais, France, Sep. 2018 - Feb. 2022</p>
             </div>
         </div>
     </div>
