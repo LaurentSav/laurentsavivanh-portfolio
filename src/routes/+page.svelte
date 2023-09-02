@@ -136,11 +136,12 @@
     <div class="flex flex-col justify-between lg:flex-row mb-12 mt-4 text-lg">
         <div class="lg:max-w-xl text-base-content pt-4">
             <h1 class="text-3xl text-secondary">
-                <span class="block">laurentsavivanh.fr</span>
+                <span class="block">laurentsavivanh.com</span>
             </h1>
             <p class="mb-2 pt-2">Portfolio website i made to introduce myself and most importantly, learn more about new trending framework!</p>
             <p class="mb-2 pt-2">I made several versions of this website using differents frameworks as years passed such as Angular (2020), React (2021) and Svelte (2023)</p>
             <p class="mb-2 pt-2">I used SvelteKit, Svelte, Tailwind CSS, DaisyUI, TypeScript, the website is entirely responsive.</p>
+            <button class="mt-8 btn btn-active btn-ghost hover:scale-105 hover:bg-secondary"><a href="https://github.com/LaurentSav/laurentsavivanh-portfolio" target="_blank">Check out on Github!</a></button>
         </div>
         <div class="mt-16">
             <img id="imgProjet1" src={LaurentSavivanhFr} alt="laurentsavivanhfr" class="shadow-xl rounded-lg border-solid border-2 border-secondary w-96 h-48 object-fill transition delay-50 duration-50 ease-in-out hover:scale-105"/>
@@ -160,7 +161,7 @@
     </h1>
     <div class="flex justify-center w-full">
         <div class="flex flex-col mb-12 mt-8 items-center lg:w-5/6">
-            <div class="collapse collapse-arrow w-full outline outline-secondary outline-offset-0 transition delay-50 duration-50 ease-in-out hover:scale-105">
+            <div class="collapse collapse-arrow w-full outline outline-secondary outline-offset-0 transition delay-50 duration-50 ease-in-out hover:scale-105 hover:bg-secondary">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title title1 peer-checked:bg-secondary peer-checked:text-secondary-content py-4 lg:py-8">
                     <div class="flex flex-rox justify-between items-center gap-6 grow lg:text-lg md:font-medium w-full ">
@@ -178,7 +179,7 @@
                     </ul>
                 </div>
             </div >
-            <div class="collapse collapse-arrow w-full outline outline-secondary outline-offset-0 mt-4 transition delay-50 duration-50 ease-in-out hover:scale-105">
+            <div class="collapse collapse-arrow w-full outline outline-secondary outline-offset-0 mt-4 transition delay-50 duration-50 ease-in-out hover:scale-105 hover:bg-secondary">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title title1 peer-checked:bg-secondary peer-checked:text-secondary-content py-4 lg:py-8">
                     <div class="flex flex-rox justify-between items-center gap-6 grow lg:text-lg md:font-medium w-full ">
@@ -202,15 +203,15 @@
         <span class="block">Education</span> 
     </h1>
     <div class="mt-12 flex flex-col items-center justify-center gap-8 lg:flex-row">
-        <div class="pt-4 card w-96 bg-base-100 shadow-xl outline outline-secondary outline-offset-0 transition delay-50 duration-50 ease-in-out hover:scale-105">
-            <figure><img class="object-fill h-40 w-64" src={UQAC} alt="UQAC" /></figure>
+        <div class="pt-4 card card-compact w-80 bg-base-100 shadow-xl outline outline-secondary outline-offset-0 transition delay-50 duration-50 ease-in-out hover:scale-105 hover:bg-secondary">
+            <figure><img class="object-fill h-32 w-48" src={UQAC} alt="UQAC" /></figure>
             <div class="card-body">
               <h2 class="card-title">Master Degree, in Computer Science - University of Quebec at Chicoutimi</h2>
               <p>Chicoutimi, Canada, Sep. 2020 - Feb. 2022</p>
             </div>
           </div>
-        <div class="pt-4 card w-96 bg-base-100 shadow-xl outline outline-secondary outline-offset-0 transition delay-50 duration-50 ease-in-out hover:scale-105">
-            <figure><img class="object-fill h-40 w-64" src={EILCO} alt="EILCO" /></figure>
+        <div class="pt-4 card card-compact w-80 bg-base-100 shadow-xl outline outline-secondary outline-offset-0 transition delay-50 duration-50 ease-in-out hover:scale-105 hover:bg-secondary">
+            <figure><img class="object-fill h-32 w-64" src={EILCO} alt="EILCO" /></figure>
             <div class="card-body">
                 <h2 class="card-title">Engineer Degree, in Computer Science - Engineering School of the Opal Coast</h2>
                 <p>Calais, France, Sep. 2018 - Feb. 2022</p>
