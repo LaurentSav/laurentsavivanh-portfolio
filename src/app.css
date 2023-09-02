@@ -22,3 +22,11 @@ section{
     margin: auto;
     padding: 0 2rem;
 }
+
+[data-theme="night"] .title1 {
+    color: rgb(255, 255, 255);
+}
+
+[data-theme="autumn"] .title1 {
+    color: rgb(105, 86, 86);
+}
