@@ -7,8 +7,8 @@
     --matrix-background: hsla(var(--b1)/ 0.3);
 }
 
-[data-theme='light'] {
-    --matrix-letter: #000000;
+[data-theme='autumn'] {
+    --matrix-letter: #b46148;
     --matrix-background: hsla(var(--b1)/ 0.3);
 }
 
